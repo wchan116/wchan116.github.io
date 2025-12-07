@@ -1,6 +1,8 @@
 import { json } from '@sveltejs/kit';
 import type { Post } from '$lib/types';
 
+export const prerender = true;
+
 async function getPosts() {
 	const paths = import.meta.glob('/src/lib/posts/*.svx', { eager: true });
 
