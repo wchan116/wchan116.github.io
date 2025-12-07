@@ -9,3 +9,5 @@
 </svelte:head>
 
 {@render children()}
+
+export const prerender = true; export const trailingSlash = "always";
