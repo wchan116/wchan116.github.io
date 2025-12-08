@@ -10,4 +10,6 @@ declare global {
 	}
 }
 
+import '@poppanator/sveltekit-svg/dist/svg.d.ts';
+
 export {};
