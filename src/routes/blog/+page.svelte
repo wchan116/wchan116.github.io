@@ -10,14 +10,16 @@
 </svelte:head>
 
 <section>
-	<ul class="list bg-base-200 rounded-box shadow-md">
+	<ul>
 		{#each data.posts as post (post.slug)}
-			<li class="list-row">
-				<div>
-					<a href={resolve('/blog/[post]', { post: post.slug })} class="title">{post.title}</a>
-					<p class="date text-xs">Posted on {parseISO(post.date)}</p>
-					<p class="description">{post.description}</p>
-				</div>
+			<li class="card flex hover:bg-base-300 bg-base-200">
+				<a href={resolve('/blog/[post]', { post: post.slug })} class="flex-1 no-underline">
+					<div class="card-body">
+						<h3>{post.title}</h3>
+						<p class="date text-xs">Posted on {parseISO(post.date)}</p>
+						<p class="description">{post.description}</p>
+					</div>
+				</a>
 			</li>
 		{/each}
 	</ul>
