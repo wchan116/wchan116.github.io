@@ -1,0 +1,16 @@
+---
+title: Second post
+description: Second post.
+date: '2025-12-08 19:38'
+published: true
+---
+
+## Markdown
+
+test
+
+```ts
+function greet(name: string) {
+	console.log(`Hello world`)
+}
+```
