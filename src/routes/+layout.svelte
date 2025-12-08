@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/lighthouse.ico';
 	import { resolve } from '$app/paths';
 	import '../app.css';
 
@@ -11,7 +11,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<nav class="navbar bg-base-100 shadow-sm">
+<nav class="navbar bg-neutral shadow-sm">
 	<div class="flex-1">
 		<a class="btn btn-ghost text-xl" href={resolve('/')}>wchan</a>
 	</div>
@@ -23,6 +23,6 @@
 	</div>
 </nav>
 
-<main class="container p-4 prose max-w-[100vw]">
+<main class="container md:px-16 py-8 px-8 prose max-w-[100vw]">
 	{@render children()}
 </main>

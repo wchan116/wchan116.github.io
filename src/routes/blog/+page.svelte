@@ -10,7 +10,7 @@
 </svelte:head>
 
 <section>
-	<ul>
+	<ul class="px-0">
 		{#each data.posts as post (post.slug)}
 			<li class="card flex hover:bg-base-300 bg-base-200">
 				<a href={resolve('/blog/[post]', { post: post.slug })} class="flex-1 no-underline">
