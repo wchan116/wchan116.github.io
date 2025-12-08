@@ -9,7 +9,7 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
+<article class="lg:px-32">
 	<h1>{data.meta.title}</h1>
 	<Content />
 </article>

@@ -23,6 +23,6 @@
 	</div>
 </nav>
 
-<main class="container md:px-16 py-8 px-8 prose max-w-[100vw]">
+<main class="container md:px-16 py-8 px-8 prose max-w-7xl m-auto">
 	{@render children()}
 </main>
