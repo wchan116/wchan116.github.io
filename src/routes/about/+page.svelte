@@ -4,7 +4,11 @@
 </script>
 
 <div class="flex items-center flex-col">
-	<img src={lighthouse} alt="a lighthouse" />
+	<div class="avatar">
+		<div class="w-sm rounded-xl">
+			<img class="not-prose" src={lighthouse} alt="a lighthouse" />
+		</div>
+	</div>
 	<p>Software Engineer based in Sydney</p>
 	<a href="https://github.com/wchan116"><GithubWhiteLogo class="w-[24px] h-[24px]" /></a>
 </div>
